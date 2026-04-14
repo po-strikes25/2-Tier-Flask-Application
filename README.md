@@ -345,7 +345,17 @@ The CI/CD pipeline is now fully operational. Any `git push` to the `main` branch
 - Check the correct branch main/master in the jenkinsfile]
 
 [okay despite build success the flask app container crashed why?
+- Corrected the db name to ‘’devops]
+[while deploying the issue was this:
+Docker created a new named volume based on a different compose project/folder name, so your app used an old persistent MySQL volume without the devops DB, causing the error.
+
+? How to avoid it:
+Always use the same project name or explicitly control it:
+docker compose -p two-tier-flask down -v
+or always clean old volumes before redeploy:
+docker compose down -v
 ]
+
 
 ### **9. Infrastructure Diagram**
 
