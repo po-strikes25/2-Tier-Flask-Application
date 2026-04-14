@@ -38,3 +38,5 @@ sudo apt install jenkins -y
 # To start & enable the jenkins service
 sudo systemctl start jenkins
 sudo systemctl enable jenkins
+
+# Testing Jenkins automatic build/deploy
