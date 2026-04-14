@@ -340,6 +340,12 @@ pipeline {
 ### **8. Conclusion**
 
 The CI/CD pipeline is now fully operational. Any `git push` to the `main` branch of the configured GitHub repository will automatically trigger the Jenkins pipeline, which will build the new Docker image and deploy the updated application, ensuring a seamless and automated workflow from development to production.
+[build failed multiple times – create ‘pipeline’ type project
+- Requirements.txt not requirement.txt
+- Check the correct branch main/master in the jenkinsfile]
+
+[okay despite build success the flask app container crashed why?
+]
 
 ### **9. Infrastructure Diagram**
 
